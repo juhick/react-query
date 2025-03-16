@@ -1,8 +1,8 @@
 import LoginStatus from "./auth/LoginStatus";
-import { useTasks } from "./tasks";
+import useTasksStore from "./tasks/store";
 
 const NavBar = () => {
-  const { tasks } = useTasks();
+  const { tasks } = useTasksStore();
 
   return (
     <nav className="navbar d-flex justify-content-between">
